@@ -1,0 +1,141 @@
+.Home {
+
+  text-align: left;
+  width: 95%;
+  margin: 0 auto;
+  /* max-width: 1200px; */
+}
+
+.Home-intro {
+  letter-spacing:  -1px;
+  margin-top: 2vw;
+  font-weight: 500;
+  font-size: 8vw;
+  color: #fff;
+  /* animation: 2s spring-up linear forwards;
+  animation-fill-mode: both; */
+  /* margin: 100px 50px 100px 50px; */
+  line-height: 105%;
+  cursor: default;
+
+}
+
+
+p span {
+  display: table;
+  margin-top: 8vw;
+}
+
+@keyframes spring-up {
+  0%   { transform: translateY(-100px); }
+  1%   { transform: translateY(-100.86376425736435px); }
+  2%   { transform: translateY(-103.30887625352196px); }
+  3%   { transform: translateY(-107.11510629593647px); }
+  4%   { transform: translateY(-112.06407562318391px); }
+  5%   { transform: translateY(-117.94274565577675px); }
+  6%   { transform: translateY(-124.54642206432976px); }
+  7%   { transform: translateY(-131.68127828753256px); }
+  8%   { transform: translateY(-139.16640928859013px); }
+  9%   { transform: translateY(-146.83543411253555px); }
+  10%  { transform: translateY(-154.53767168481676px); }
+  11%  { transform: translateY(-162.13891722725492px); }
+  12%  { transform: translateY(-169.5218524015242px); }
+  13%  { transform: translateY(-176.586122452165px); }
+  14%  { transform: translateY(-183.24811775766403px); }
+  15%  { transform: translateY(-189.44049645431824px); }
+  16%  { transform: translateY(-195.11148520727033px); }
+  17%  { transform: translateY(-200.22399583479304px); }
+  18%  { transform: translateY(-204.7545926401348px); }
+  19%  { transform: translateY(-208.6923456959847px); }
+  20%  { transform: translateY(-212.03760160865943px); }
+  21%  { transform: translateY(-214.80070272750575px); }
+  22%  { transform: translateY(-217.0006815538447px); }
+  23%  { transform: translateY(-218.663955706991px); }
+  24%  { transform: translateY(-219.82304538616665px); }
+  25%  { transform: translateY(-220.51533264040694px); }
+  26%  { transform: translateY(-220.78187825980012px); }
+  27%  { transform: translateY(-220.66631056510982px); }
+  28%  { transform: translateY(-220.21379606281764px); }
+  29%  { transform: translateY(-219.47010051916436px); }
+  30%  { transform: translateY(-218.48074615498618px); }
+  31%  { transform: translateY(-217.29026816681414px); }
+  32%  { transform: translateY(-215.94157202720172px); }
+  33%  { transform: translateY(-214.47539120167033px); }
+  34%  { transform: translateY(-212.92984275093278px); }
+  35%  { transform: translateY(-211.34007772340152px); }
+  36%  { transform: translateY(-209.7380212102259px); }
+  37%  { transform: translateY(-208.15219633458372px); }
+  38%  { transform: translateY(-206.60762598024857px); }
+  39%  { transform: translateY(-205.12580475213764px); }
+  40%  { transform: translateY(-203.72473387120573px); }
+  41%  { transform: translateY(-202.41901137453345px); }
+  42%  { transform: translateY(-201.2199697208098px); }
+  43%  { transform: translateY(-200.13585305311918px); }
+  44%  { transform: translateY(-199.17202686633095px); }
+  45%  { transform: translateY(-198.33121263498484px); }
+  46%  { transform: translateY(-197.61374067964204px); }
+  47%  { transform: translateY(-197.01781499211256px); }
+  48%  { transform: translateY(-196.53978407975245px); }
+  49%  { transform: translateY(-196.17441264256894px); }
+  50%  { transform: translateY(-195.91514930968282px); }
+  51%  { transform: translateY(-195.75438645693993px); }
+  52%  { transform: translateY(-195.68370845882814px); }
+  53%  { transform: translateY(-195.69412560592633px); }
+  54%  { transform: translateY(-195.7762912646242px); }
+  55%  { transform: translateY(-195.92070055484277px); }
+  56%  { transform: translateY(-196.1178692094388px); }
+  57%  { transform: translateY(-196.35849187467915px); }
+  58%  { transform: translateY(-196.63357948554946px); }
+  59%  { transform: translateY(-196.93457574055066px); }
+  60%  { transform: translateY(-197.25345307939384px); }
+  61%  { transform: translateY(-197.582788848219px); }
+  62%  { transform: translateY(-197.91582261394115px); }
+  63%  { transform: translateY(-198.24649577847353px); }
+  64%  { transform: translateY(-198.56947483257156px); }
+  65%  { transform: translateY(-198.880159678671px); }
+  66%  { transform: translateY(-199.17467862706735px); }
+  67%  { transform: translateY(-199.44987158683784px); }
+  68%  { transform: translateY(-199.70326312039px); }
+  69%  { transform: translateY(-199.93302695538216px); }
+  70%  { transform: translateY(-200.13794350123476px); }
+  71%  { transform: translateY(-200.31735190782865px); }
+  72%  { transform: translateY(-200.47109806939648px); }
+  73%  { transform: translateY(-200.5994799360452px); }
+  74%  { transform: translateY(-200.70319134949088px); }
+  75%  { transform: translateY(-200.78326552237604px); }
+  76%  { transform: translateY(-200.84101916476513px); }
+  77%  { transform: translateY(-200.87799812568187px); }
+  78%  { transform: translateY(-200.89592530095737px); }
+  79%  { transform: translateY(-200.89665143457395px); }
+  80%  { transform: translateY(-200.88210931137806px); }
+  81%  { transform: translateY(-200.85427175192046px); }
+  82%  { transform: translateY(-200.81511366810776px); }
+  83%  { transform: translateY(-200.76657838029143px); }
+  84%  { transform: translateY(-200.7105482768328px); }
+  85%  { transform: translateY(-200.64881982187876px); }
+  86%  { transform: translateY(-200.58308284617112px); }
+  87%  { transform: translateY(-200.51490398641354px); }
+  88%  { transform: translateY(-200.44571408112546px); }
+  89%  { transform: translateY(-200.37679929488283px); }
+  90%  { transform: translateY(-200.3092956925791px); }
+  91%  { transform: translateY(-200.24418697437903px); }
+  92%  { transform: translateY(-200.1823050421591px); }
+  93%  { transform: translateY(-200.12433307616453px); }
+  94%  { transform: translateY(-200.07081078240043px); }
+  95%  { transform: translateY(-200.02214147494948px); }
+  96%  { transform: translateY(-199.97860066859386px); }
+  97%  { transform: translateY(-199.940345864654px); }
+  98%  { transform: translateY(-199.90742722728143px); }
+  99%  { transform: translateY(-199.8797988721998px); }
+  100% { transform: translateY(-199.8573305048547px); }
+}
+
+/* @media (max-width: 1200px) {
+  .Home-intro {
+    font-size: 70px;
+  }
+  p span {
+    display: table;
+    margin-top: 70px;
+  }
+} */
