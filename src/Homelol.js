@@ -6,50 +6,44 @@ import {Motion, spring} from 'react-motion';
   
 class Navbar extends Component {
     
-    constructor(props) {
-        super(props)
-        this.state = {
-            showing: window.pageYOffset < 100
-        }
-        this.handleScroll = this.handleScroll.bind(this)
-    }
-
-    componentDidMount() {
-        window.addEventListener('scroll', this.handleScroll)
-    }
-
     handleScroll(event) {
         console.log(window.pageYOffset)
-        var scrollTop = window.pageYOffset
+        let scrollTop = window.pageYOffset
         // let notification = document.getElementById('notification')
-        if(scrollTop < 100) {
-            this.setState({ showing: false });
+    
+        if(scrollTop > 100) {
+            this.setState({});
             // notification.classList.add('show-me')
             // console.log('is more than zero')
         } else {
-            this.setState({ showing: true });
+            // notification.classList.remove('show-me')
         }
-        console.log(this.state.showing)
+    
     }
 
     render () {
-        console.log('hello')
+
         const config = { stiffness: 220, damping: 15};
-        // const toCSS = (translateY) => ({ transform: `translateY:${translateY}px`});
+        const toCSS = (translateY) => ({ transform: `translateY:${translateY}px`});
 
         return (
-        <Motion
-        defaultStyle={{ translateY: -100 }}
-        style={{
-            translateY: spring(this.state.showing ? 0 : -100, config) }} >
-        {
-            (value) => <div className="Home-nav" style={{ transform: `translateY(${value.translateY}px)`}}> 
-            <p className="Card-text dontTouch">
-            Back to top
-            </p>
-            </div>
-        }
-        </Motion> 
+        // <Motion
+        // defaultStyle={{ translateY: 100 }}
+        // style={{
+        //     translateY: spring(0, config) }} >
+        // {
+        //     (value) => <div className="Home-nav" style={{ transform: `translateY:100px`}}> 
+        //     <p className="Card-text dontTouch">
+        //     Back to top
+        //     </p>
+        //     </div> 
+        // }
+        // </Motion>
+        <div className="Home-nav" style={{ transform: `translateY:100px`}}> 
+             <p className="Card-text dontTouch">
+             Back to top
+             </p>
+             </div> 
         )
     }
 
@@ -57,6 +51,10 @@ class Navbar extends Component {
 
 
 class Home extends Component {
+
+    componentDidMount() {
+        window.addEventListener('scroll', Navbar.handleScroll)
+    }
 
  render() {
      return (
